@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1893448595, guid: a040fb66244a7f54289914d98ea4ef7d, type: 3}
+  m_Name: GameController
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"graph":{"variables":{"collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[],"controlOutputDefinitions":[],"valueInputDefinitions":[],"valueOutputDefinitions":[],"title":null,"summary":null,"pan":{"x":146.0,"y":84.0},"zoom":1.0,"elements":[{"coroutine":false,"defaultValues":{},"position":{"x":-204.0,"y":-144.0},"guid":"da4d0ea1-d80a-4d42-afa4-ff44ece393a2","$version":"A","$type":"Bolt.Start"},{"coroutine":false,"defaultValues":{},"position":{"x":-204.0,"y":60.0},"guid":"6b3fd49c-256e-41a6-bb7a-320bc91a3b74","$version":"A","$type":"Bolt.Update","$id":"11"},{"chainable":false,"member":{"name":"GetKeyDown","parameterTypes":["UnityEngine.KeyCode"],"targetType":"UnityEngine.Input","targetTypeName":"UnityEngine.Input","$version":"A"},"defaultValues":{"%key":{"$content":"R","$type":"UnityEngine.KeyCode"}},"position":{"x":4.0,"y":60.0},"guid":"85b1d886-9a90-43a1-90fc-677fc854e59f","$version":"A","$type":"Bolt.InvokeMember","$id":"13"},{"defaultValues":{},"position":{"x":226.0,"y":59.0},"guid":"d45127e1-00e1-418f-ad50-9fa3da0e059c","$version":"A","$type":"Bolt.Branch","$id":"16"},{"chainable":false,"member":{"name":"LoadScene","parameterTypes":["System.String"],"targetType":"UnityEngine.SceneManagement.SceneManager","targetTypeName":"UnityEngine.SceneManagement.SceneManager","$version":"A"},"defaultValues":{"%sceneName":{"$content":"Part1","$type":"System.String"}},"position":{"x":408.0,"y":60.0},"guid":"12048798-19d2-4886-a09c-22edc5bcdfc1","$version":"A","$type":"Bolt.InvokeMember","$id":"18"},{"sourceUnit":{"$ref":"11"},"sourceKey":"trigger","destinationUnit":{"$ref":"13"},"destinationKey":"enter","guid":"bf0a22d7-5341-4e40-bf4c-cf70fd40be73","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"13"},"sourceKey":"exit","destinationUnit":{"$ref":"16"},"destinationKey":"enter","guid":"01e8695c-a2ad-457f-8467-5fd01c64406d","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"16"},"sourceKey":"ifTrue","destinationUnit":{"$ref":"18"},"destinationKey":"enter","guid":"5cda0ef9-58b6-4838-a293-9532220dd3c4","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"13"},"sourceKey":"result","destinationUnit":{"$ref":"16"},"destinationKey":"condition","guid":"e69ecff0-d3c2-4fb6-9104-d174c42afa35","$type":"Bolt.ValueConnection"},{"position":{"xMin":-33.0,"yMin":-25.0,"xMax":615.0,"yMax":205.0},"label":"We
+      reload the scene by pressing R","comment":null,"color":{"r":0.0,"g":0.0,"b":0.0,"a":1.0},"guid":"72dc8963-3b13-4b59-9c2a-d04bcd65ab71","$version":"A","$type":"Ludiq.GraphGroup"}],"$version":"A"}}'
+    _objectReferences: []
